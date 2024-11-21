@@ -1,3 +1,10 @@
 @import 'reset';
 @import 'utils';
 @import 'fonts';
+
+// blocks
+@import 'blocks/page';
+@import 'blocks/mini-bloks/container';
+@import 'blocks/mini-bloks/grid';
+@import 'blocks/mini-bloks/top';
+@import 'blocks/header';
