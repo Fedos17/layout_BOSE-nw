@@ -2,3 +2,18 @@ $white: #fff;
 $dark: #1B2129;
 $black: #191919;
 $gray: #9393A3;
+
+// Dinamic variable the spacing between section
+:root {
+  --sectoin-spacing-top: 120px;
+}
+
+@include mobile {
+  :root {
+    --sectoin-spacing-top: 96px;
+  }
+}
+
+// Variable the spacing between product cards
+$card-gap: 24px;
+
