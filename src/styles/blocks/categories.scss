@@ -1,0 +1,31 @@
+.categories {
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    color: $dark;
+    margin-bottom: 56px;
+
+    @include tablet {
+      font-size: 40px;
+    }
+
+    @include mobile {
+      font-size: 32px;
+      margin-bottom: 47px;
+    }
+  }
+
+  &__categori-card {
+    margin-bottom: 56px;
+
+    @include mobile {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__button {
+    @include desktop {
+      max-width: 324px;
+    }
+  }
+}
