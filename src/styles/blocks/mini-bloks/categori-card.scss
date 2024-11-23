@@ -8,18 +8,18 @@
 
   &__image {
     flex: 0 0 calc((100% - $card-gap) / 2);
-    height: 324px;
+    padding-bottom: 31.77%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     transition: all .3s;
 
     @include tablet {
-      height: 184px;
+      padding-bottom: 30.66%;
     }
 
     @include mobile {
-      height: 130px;
+      padding-bottom: 46.42%;
     }
 
     &:hover {
