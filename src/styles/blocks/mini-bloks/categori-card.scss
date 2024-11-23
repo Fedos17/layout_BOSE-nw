@@ -1,0 +1,51 @@
+.categori-card {
+  &__image-block {
+    display: flex;
+    flex-flow: row;
+    gap: $card-gap;
+    margin-bottom: 16px;
+  }
+
+  &__image {
+    flex: 0 0 calc((100% - $card-gap) / 2);
+    padding-bottom: 31.77%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .3s;
+
+    @include tablet {
+      padding-bottom: 30.66%;
+    }
+
+    @include mobile {
+      padding-bottom: 46.42%;
+    }
+
+    &:hover {
+      border-radius: 10px;
+      transform: scale(1.08);
+    }
+  }
+
+  @for $i from 1 through 6 {
+    &__image--#{$i} {
+      background-image: url('../images/categori-#{$i}.png');
+    }
+  }
+
+  &__name {
+    font-size: 24px;
+    font-weight: 700;
+    color: $dark;
+    transition: letter-spacing 0.3s;
+
+    @include mobile {
+      font-size: 18px;
+    }
+
+    &:hover {
+      letter-spacing: 2px;
+    }
+  }
+}

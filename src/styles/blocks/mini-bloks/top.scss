@@ -1,0 +1,129 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0;
+
+  &__logo-img {
+    transition: transform 0.3s;
+
+    @include mobile {
+      max-width: 152px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__phone-tooltip {
+    font-size: 12px;
+    letter-spacing: 2px;
+
+    &--hover {
+      display: none;
+    }
+  }
+
+  &__phone-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+  }
+
+  &__phone-img {
+    width: 24px;
+    height: 24px;
+
+    &:hover {
+      animation: phone .5s linear 0s infinite normal none;
+    }
+  }
+
+  @keyframes phone{
+    0% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(20deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 3px;
+    width: 32px;
+    height: 32px;
+    padding: 8px 4px;
+
+    & span {
+      width: 100%;
+      height: 2px;
+      background-color: $dark;
+      border-radius: 20px;
+      transition: width 0.3s;
+    }
+  }
+
+  &__close {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 32px;
+    height: 32px;
+    padding: 8px 4px;
+
+    & span {
+      position: relative;
+      width: 100%;
+      height: 2px;
+      background-color: $dark;
+      border-radius: 20px;
+      top: 2px;
+      transition: all 0.3s;
+
+      &:nth-child(1) {
+        transform: rotate(50deg);
+      }
+
+      &:nth-child(2) {
+        transform: translateY(-100%) rotate(-50deg);
+      }
+    }
+  }
+
+  &__menu:hover {
+    & span:nth-child(1) {
+      width: 80%;
+    }
+
+    & span:nth-child(3) {
+      width: 45%;
+    }
+  }
+
+  &__close:hover {
+    & span:nth-child(1) {
+      transform: rotate(130deg);
+    }
+
+    & span:nth-child(2) {
+      transform: translateY(-100%) rotate(-130deg);
+    }
+  }
+}

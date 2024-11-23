@@ -1,0 +1,8 @@
+* {
+  font-family: Manrope, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.page:has(.navigation:target) {
+  overflow: hidden;
+}

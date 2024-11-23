@@ -1,0 +1,45 @@
+.product-card {
+  @for $i from 1 through 3 {
+    &__image--#{$i} {
+      background-image: url('../images/recommended-#{$i}.png');
+    }
+  }
+
+  &__image {
+    position: relative;
+    padding-bottom: 100%;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 24px;
+    transition: all .3s;
+
+    &:hover {
+      border-radius: 10px;
+      transform: scale(1.08);
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    width: max-content;
+    transition: letter-spacing 0.3s;
+
+    &:hover {
+      letter-spacing: 2px;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+
+  &__price {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}

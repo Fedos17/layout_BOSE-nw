@@ -1,3 +1,19 @@
-body {
-  margin: 0;
-}
+@import 'reset';
+@import 'utils';
+@import 'fonts';
+
+// blocks
+@import 'blocks/main-block';
+@import 'blocks/page';
+@import 'blocks/mini-bloks/container';
+@import 'blocks/mini-bloks/grid';
+@import 'blocks/mini-bloks/top';
+@import 'blocks/mini-bloks/button';
+@import 'blocks/header';
+@import 'blocks/navigation';
+@import 'blocks/recommended';
+@import 'blocks/mini-bloks/product-card';
+@import 'blocks/categories';
+@import 'blocks/mini-bloks/categori-card';
+@import 'blocks/about-us';
+@import 'blocks/contact-us';
